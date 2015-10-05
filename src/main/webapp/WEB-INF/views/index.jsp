@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <!--<!DOCTYPE html>-->
@@ -10,16 +11,16 @@
 <title>ALPHA</title>
 
 <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.css" rel="stylesheet">
+<link href="<c:url value="/resources/css/bootstrap.css"/>" rel="stylesheet">
 
 <!-- Custom CSS -->
-<link href="/pp/resources/assets/css/main.css" rel="stylesheet">
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="css/animate-custom.css" rel="stylesheet">
+<link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/css/font-awesome.min.css" />"  rel="stylesheet">
+<link href="<c:url value="/resources/css/animate-custom.css"  />" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script src="<c:url value="/resources/js/jquery.min.js" />" ></script>
+<script type="text/javascript" src="<c:url value="/resources/js/modernizr.custom.js" />" ></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,7 +70,7 @@
     <div class="row white">
       <h2 class="centered">ABOUT US</h2>
       <hr>
-      <div class="col-md-6"> <img class="img-responsive" src="img/about/about1.jpg" align=""> </div>
+      <div class="col-md-6"> <img class="img-responsive" src="<c:url value="/resources/img/about/about1.jpg"/>" align=""> </div>
       <div class="col-md-6">
         <h3>Who we are</h3>
         <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel. Te sit malorum ceteros repudiandae, ne tritani adipisci vis.</p>
@@ -126,7 +127,7 @@
         <!-- PORTFOLIO IMAGE 1 -->
         <div class="col-md-4 ">
           <div class="grid mask">
-            <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
+            <figure> <img class="img-responsive" src="<c:url value="/resources/img/portfolio/folio01.jpg"/>" alt="">
               <figcaption>
                 <h5>UX / UI</h5>
                 <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
@@ -148,7 +149,7 @@
                 <h4 class="modal-title">Project Title</h4>
               </div>
               <div class="modal-body">
-                <p><img class="img-responsive" src="img/portfolio/folio01-preview.jpg" alt=""></p>
+                <p><img class="img-responsive" src="<c:url value="/resources/img/portfolio/folio01-preview.jpg"/>" alt=""></p>
                 <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel</p>
                 <p><b><a href="#">Visit Site</a></b></p>
               </div>
@@ -165,7 +166,7 @@
         <!-- PORTFOLIO IMAGE 2 -->
         <div class="col-md-4">
           <div class="grid mask">
-            <figure> <img class="img-responsive" src="img/portfolio/folio02.jpg" alt="">
+            <figure> <img class="img-responsive" src="<c:url value="/resources/img/portfolio/folio02.jpg" />"alt="">
               <figcaption>
                 <h5>CONCEPT</h5>
                 <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
@@ -179,7 +180,7 @@
         <!-- PORTFOLIO IMAGE 3 -->
         <div class="col-md-4">
           <div class="grid mask">
-            <figure> <img class="img-responsive" src="img/portfolio/folio03.jpg" alt="">
+            <figure> <img class="img-responsive" src="<c:url value="/resources/img/portfolio/folio03.jpg"/>" alt="">
               <figcaption>
                 <h5>UX / UI</h5>
                 <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
@@ -196,7 +197,7 @@
       <div class="row">
         <div class="col-md-4 ">
           <div class="grid mask">
-            <figure> <img class="img-responsive" src="img/portfolio/folio04.jpg" alt="">
+            <figure> <img class="img-responsive" src="<c:url value="/resources/img/portfolio/folio04.jpg"/>" alt="">
               <figcaption>
                 <h5>CONCEPT</h5>
                 <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
@@ -210,7 +211,7 @@
         <!-- PORTFOLIO IMAGE 5 -->
         <div class="col-md-4">
           <div class="grid mask">
-            <figure> <img class="img-responsive" src="img/portfolio/folio05.jpg" alt="">
+            <figure> <img class="img-responsive" src="<c:url value="/resources/img/portfolio/folio05.jpg" />"alt="">
               <figcaption>
                 <h5>UX / UI</h5>
                 <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
@@ -224,7 +225,7 @@
         <!-- PORTFOLIO IMAGE 6 -->
         <div class="col-md-4">
           <div class="grid mask">
-            <figure> <img class="img-responsive" src="img/portfolio/folio06.jpg" alt="">
+            <figure> <img class="img-responsive" src="<c:url value="/resources/img/portfolio/folio06.jpg"/>" alt="">
               <figcaption>
                 <h5>CMS INTEGRATION</h5>
                 <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
@@ -249,19 +250,19 @@
     <div class="row centered">
       <h2 class="centered">MEET OUR TEAM</h2>
       <hr>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="img/team/team01.jpg" height="120px" width="120px" alt="">
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="<c:url value="/resources/img/team/team01.jpg"/>" height="120px" width="120px" alt="">
         <h4><strong>Jessica</strong></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
         <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="img/team/team02.jpg" height="120px" width="120px" alt="">
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="<c:url value="/resources/img/team/team02.jpg"/>" height="120px" width="120px" alt="">
         <h4><b>Mike</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
         <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="img/team/team03.jpg" height="120px" width="120px" alt="">
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="<c:url value="/resources/img/team/team03.jpg"/>"height="120px" width="120px" alt="">
         <h4><b>Michele</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
         <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-      <div class="col-lg-3 centered"> <img class="img img-circle" src="img/team/team04.jpg" height="120px" width="120px" alt="">
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="<c:url value="/resources/img/team/team04.jpg"/>" height="120px" width="120px" alt="">
         <h4><b>Larry</b></h4>
         <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
         <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
@@ -341,12 +342,12 @@
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 
-<script type="text/javascript" src="js/bootstrap.min.js"></script> 
-<script type="text/javascript" src="js/retina.js"></script> 
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
-<script type="text/javascript" src="js/smoothscroll.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/jquery-func.js"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/retina.js"/>"</script>
+<script type="text/javascript" src="<c:url value="/resources/js/jquery.easing.1.3.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/smoothscroll.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/jqBootstrapValidation.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/contact_me.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/jquery-func.js"/>"></script>
 </body>
 </html>
